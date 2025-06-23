@@ -8,7 +8,7 @@ from model import StudentModel
 
 app = FastAPI()
 
-# Load scaler, trained column names, and model
+# Load scaler, trained column names, and model.
 scaler = joblib.load("scaler.pkl")
 trained_columns = joblib.load("trained_columns.pkl")
 input_dim = len(trained_columns)
