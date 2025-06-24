@@ -6,6 +6,14 @@ import numpy as np
 import joblib
 from model import StudentModel
 
+
+
+app = FastAPI()
+
+@app.get("/")
+def read_root():
+    return {"message": "Student Grade Prediction API is running. Use the /predict endpoint."}
+
 app = FastAPI()
 
 # Load scaler, trained column names, and model.
