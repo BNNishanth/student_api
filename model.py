@@ -1,6 +1,5 @@
 import torch.nn as nn
 
-
 class StudentModel(nn.Module):
     def __init__(self, input_dim):
         super(StudentModel, self).__init__()
